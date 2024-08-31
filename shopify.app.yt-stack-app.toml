@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a81bddc2a95f0535bc23022b36ea2a74"
+name = "yt-stack-app"
+handle = "yt-stack-app"
+application_url = "https://academy-itunes-tuner-registration.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-52b79549.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_content,read_orders,read_themes,write_content,write_products,write_themes"
+
+[auth]
+redirect_urls = [
+  "https://academy-itunes-tuner-registration.trycloudflare.com/auth/callback",
+  "https://academy-itunes-tuner-registration.trycloudflare.com/auth/shopify/callback",
+  "https://academy-itunes-tuner-registration.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
